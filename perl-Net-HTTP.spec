@@ -8,13 +8,13 @@
 Summary:	Net::HTTP - Low-level HTTP connection (client)
 Summary(pl.UTF-8):	Net::HTTP - nieskopoziomowe połączenie HTTP (klient)
 Name:		perl-Net-HTTP
-Version:	6.00
+Version:	6.01
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Net/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	936891e74e8e4b26ade1a2db8b57d2c3
+# Source0-md5:	d7ae2675fca351147adcd26f840b6993
 URL:		http://search.cpan.org/dist/Net-HTTP/
 BuildRequires:	perl-devel >= 1:5.8.8
 BuildRequires:	rpm-perlprov >= 4.1-13

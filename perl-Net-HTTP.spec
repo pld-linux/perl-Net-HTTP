@@ -4,7 +4,6 @@
 #
 %define		pdir	Net
 %define		pnam	HTTP
-%include	/usr/lib/rpm/macros.perl
 Summary:	Net::HTTP - Low-level HTTP connection (client)
 Summary(pl.UTF-8):	Net::HTTP - nieskopoziomowe połączenie HTTP (klient)
 Name:		perl-Net-HTTP

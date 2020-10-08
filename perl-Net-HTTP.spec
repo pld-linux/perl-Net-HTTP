@@ -1,6 +1,6 @@
 #
 # Conditional build:
-%bcond_with	tests		# perform "make test" (uses network)
+%bcond_with	tests	# unit tests
 #
 %define		pdir	Net
 %define		pnam	HTTP
@@ -14,11 +14,14 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Net/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	6cbebcc76099ce822f0aa7764af11f73
-URL:		http://search.cpan.org/dist/Net-HTTP/
+URL:		https://metacpan.org/release/Net-HTTP
 BuildRequires:	perl-devel >= 1:5.8.8
 BuildRequires:	rpm-perlprov >= 4.1-13
+BuildRequires:	rpmbuild(macros) >= 1.745
 %if %{with tests}
 BuildRequires:	perl-IO-Compress
+BuildRequires:	perl-Test-Simple
+BuildRequires:	perl-URI
 %endif
 Suggests:	perl-IO-Socket-SSL >= 2.012
 Conflicts:	perl-libwww < 6
@@ -57,7 +60,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc Changes
+%doc CONTRIBUTORS Changes
 %{perl_vendorlib}/Net/HTTP.pm
 %{perl_vendorlib}/Net/HTTPS.pm
 %{perl_vendorlib}/Net/HTTP

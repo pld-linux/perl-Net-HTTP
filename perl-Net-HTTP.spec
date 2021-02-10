@@ -7,13 +7,13 @@
 Summary:	Net::HTTP - Low-level HTTP connection (client)
 Summary(pl.UTF-8):	Net::HTTP - nieskopoziomowe połączenie HTTP (klient)
 Name:		perl-Net-HTTP
-Version:	6.19
+Version:	6.20
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Net/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	6cbebcc76099ce822f0aa7764af11f73
+# Source0-md5:	00f825fb848d50202aeec074c3608453
 URL:		https://metacpan.org/release/Net-HTTP
 BuildRequires:	perl-devel >= 1:5.8.8
 BuildRequires:	rpm-perlprov >= 4.1-13
